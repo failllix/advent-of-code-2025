@@ -6,24 +6,24 @@ using namespace std;
 
 int main()
 {
-    std::ifstream file("input-day-xx.txt");
-    std::string str;
+    ifstream file("input-day-xx.txt");
+    string str;
 
-    long output;
+    long output = 0;
 
-    while (std::getline(file, str))
+    while (getline(file, str))
     {
         if (str == "")
         {
             continue;
         }
-        std::cout << "\n------------------------------------------------";
-        std::cout << "\ninput: " + str + "\n++++++++++++++++++++++++++++++++++++++++++++++++";
+        cout << "\n------------------------------------------------";
+        cout << "\ninput: " + str + "\n++++++++++++++++++++++++++++++++++++++++++++++++";
 
-        std::cout << "\n------------------------------------------------";
+        cout << "\n------------------------------------------------";
     }
 
-    std::cout << "\n\n====\n";
-    std::cout << std::to_string(output);
-    std::cout << "\n";
+    cout << "\n\n====\n";
+    cout << to_string(output);
+    cout << "\n";
 }
